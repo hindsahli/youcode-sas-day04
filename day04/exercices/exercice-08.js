@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction qui parcourt un tableau de nombres aléatoires et retourne le plus grand et le plus petit nombre, SANS utiliser Math.max ni Math.min.
+ * Créez une fonction qui parcourt un tableau de nombres aléatoires et retourne le plus grand et
+ *  le plus petit nombre, SANS utiliser Math.max ni Math.min.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-08
  * ▶️ Commande : node day04/exercices/exercice-08.js
@@ -15,3 +16,36 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+function min(tableau)
+{
+let i = 0
+let min = tableau[i]
+while(i < tableau.length)
+    {
+        if(tableau[i]< min)
+            min = tableau[i]
+        i++
+    }
+    return min 
+}
+
+function max(tableau)
+{
+let i = 0
+let max = tableau[i]
+while(i < tableau.length)
+    {
+        if(tableau[i] > max)
+            max = tableau[i]
+        i++
+    }
+    return max 
+}
+
+function maxmin(tableau)
+{
+    return [min(tableau) , max(tableau)]
+}
+let tableau = [ 1 , 8 , 8 , 9 , -3]
+console.log(maxmin(tableau))

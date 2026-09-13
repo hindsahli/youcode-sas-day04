@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Vérifiez si "Marrakech" est présent dans le tableau villes = ["Rabat", "Casablanca", "Tanger"]. Affichez true ou false.
+ * Vérifiez si "Marrakech" est présent dans le tableau villes = ["Rabat", "Casablanca", "Tanger"]. 
+ * Affichez true ou false.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-05
  * ▶️ Commande : node day04/exercices/exercice-05.js
@@ -16,4 +17,5 @@
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
 
-Array.isArray
+let villes = ["Rabat", "Casablanca", "Tanger"]
+console.log(villes.includes("Marrakech"))

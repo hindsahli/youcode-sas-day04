@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * À partir d'un grand tableau de 100 éléments, utilisez .slice() pour extraire les 10 premiers (la première page).
+ * À partir d'un grand tableau de 100 éléments,
+ *  utilisez .slice() pour extraire les 10 premiers (la première page).
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-11
  * ▶️ Commande : node day04/exercices/exercice-11.js
@@ -15,3 +16,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let tableau = []
+let i = 0
+while(i < 100)
+{
+    tableau.push(i)
+    i++
+}
+console.log(tableau.slice(0, 10))

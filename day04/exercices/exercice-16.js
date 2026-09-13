@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+function filtrerNombres(tableau)
+{
+    let nombres = []
+    let i = 0
+    while(i < tableau.length)
+    {
+        if(typeof tableau[i] === "number")
+            nombres.push(tableau[i])
+        i++
+    }
+    return nombres
+}
+
+let tableau = ["Hind", 15.5, false, 3, undefined, "Total", 46.5]
+console.log(filtrerNombres(tableau))

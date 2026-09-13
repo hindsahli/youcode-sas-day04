@@ -18,10 +18,7 @@
 // TODO: écris ta solution ici.
 
 let nombres = [10, 20, 30, 40]
- 
-let i = 0 
-while(i < nombres.length)
+for(let i = 0; i < nombres.length; i++)
 {
-    console.log(nombres[i]*2)
-    i++
+    console.log(nombres[i] * 2)
 }

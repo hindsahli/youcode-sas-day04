@@ -15,3 +15,8 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let groupe1 = ["A", "B"] 
+let  groupe2 = ["C", "D"]
+let groupe = groupe1.concat(groupe2)
+console.log(groupe)

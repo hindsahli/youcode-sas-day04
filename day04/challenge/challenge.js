@@ -20,3 +20,30 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+
+
+let panier = [101, 105, 101, 102]
+function ajouterAuPanier(id)
+{
+    panier.push(id)
+}
+
+function retirerDuPanier(id)
+{
+    let nouveauPanier = []
+    let i = 0
+    while(i < panier.length)
+    {
+        if(panier[i] !== id)
+            nouveauPanier.push(panier[i])
+        i++
+    }
+    panier = nouveauPanier
+}
+console.log(panier);
+
+ajouterAuPanier(103);
+console.log(panier);
+
+retirerDuPanier(101);
+console.log(panier);

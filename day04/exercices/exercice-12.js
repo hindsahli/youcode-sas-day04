@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Écrivez une fonction qui prend un tableau avec des doublons [1, 2, 2, 3, 4, 4, 5] et retourne un nouveau tableau sans doublons.
+ * Écrivez une fonction qui prend un tableau avec des doublons [1, 2, 2, 3, 4, 4, 5]
+ *  et retourne un nouveau tableau sans doublons.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
  * ▶️ Commande : node day04/exercices/exercice-12.js
@@ -15,3 +16,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+function sansdoublons(tableau)
+{
+    let sansdoublons = []
+    let i = 0
+    while(i < tableau.length)
+    {
+        if(sansdoublons.includes(tableau[i]) == false)
+             sansdoublons.push(tableau[i])
+        i++
+    }
+    return sansdoublons
+}
+let tableau = [1, 2, 2, 3, 4, 4, 5]
+console.log(sansdoublons(tableau))
