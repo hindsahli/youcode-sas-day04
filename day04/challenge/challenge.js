@@ -40,10 +40,27 @@ function retirerDuPanier(id)
     }
     panier = nouveauPanier
 }
+
+function afficherQuantites(panier)
+{
+    let compteur = {}
+    let i = 0 
+    while(i < panier.length)
+    {
+        if(compteur[panier[i]])
+            compteur[panier[i]]++
+        else
+            compteur[panier[i]] = 1
+        i++
+    }
+    return compteur
+}
 console.log(panier);
 
 ajouterAuPanier(103);
 console.log(panier);
+
+console.log(afficherQuantites(panier))
 
 retirerDuPanier(101);
 console.log(panier);
